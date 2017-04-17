@@ -1,16 +1,14 @@
 #pragma once
 
-#include "GraphicsLibrary.h"
-#include "Point.h"
 #include "Bitmap.h"
 
 namespace Graphics
 {
-	class GRAPHICS_LIBRARY Line
+	class PointImplementor
 	{
 	public:
-		Line();
-		~Line();
+		PointImplementor();
+		~PointImplementor();
 		void Draw(Bitmap& bitmap);
 	};
 }

@@ -11,8 +11,5 @@ namespace Graphics
 		~Bitmap();
 		void SetSize(int x, int y);
 		void Draw(Bitmap& bitmap);
-
-	private:
-		char* _Bits;
 	};
 }

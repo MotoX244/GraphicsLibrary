@@ -140,14 +140,22 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Bitmap.h" />
+    <ClInclude Include="BitmapImplementor.h" />
+    <ClInclude Include="Factory.h" />
     <ClInclude Include="GraphicsLibrary.h" />
     <ClInclude Include="Line.h" />
+    <ClInclude Include="LineImplementor.h" />
     <ClInclude Include="Point.h" />
+    <ClInclude Include="PointImplementor.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Bitmap.cpp" />
+    <ClCompile Include="BitmapImplementor.cpp" />
+    <ClCompile Include="Factory.cpp" />
     <ClCompile Include="Line.cpp" />
+    <ClCompile Include="LineImplementor.cpp" />
     <ClCompile Include="Point.cpp" />
+    <ClCompile Include="PointImplementor.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
