@@ -6,17 +6,23 @@
     <ClInclude Include="Point.h" />
     <ClInclude Include="Bitmap.h" />
     <ClInclude Include="Factory.h" />
-    <ClInclude Include="BitmapImplementor.h" />
-    <ClInclude Include="LineImplementor.h" />
-    <ClInclude Include="PointImplementor.h" />
+    <ClInclude Include="Window.h" />
+    <ClInclude Include="WindowImplementor.h" />
+    <ClInclude Include="WindowImplementor_WinAPI.h" />
+    <ClInclude Include="Color.h" />
+    <ClInclude Include="Canvas.h" />
+    <ClInclude Include="CanvasImplementor.h" />
+    <ClInclude Include="CanvasImplementor_WinAPI.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Line.cpp" />
     <ClCompile Include="Point.cpp" />
     <ClCompile Include="Bitmap.cpp" />
     <ClCompile Include="Factory.cpp" />
-    <ClCompile Include="BitmapImplementor.cpp" />
-    <ClCompile Include="LineImplementor.cpp" />
-    <ClCompile Include="PointImplementor.cpp" />
+    <ClCompile Include="Window.cpp" />
+    <ClCompile Include="WindowImplementor_WinAPI.cpp" />
+    <ClCompile Include="Color.cpp" />
+    <ClCompile Include="Canvas.cpp" />
+    <ClCompile Include="CanvasImplementor_WinAPI.cpp" />
   </ItemGroup>
 </Project>

@@ -23,13 +23,13 @@
     <ProjectGuid>{2B49A49F-1C23-4B7D-8379-097D2E9A9C39}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>Graphics</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v140</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
@@ -42,13 +42,13 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v140</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v140</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
@@ -140,22 +140,28 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Bitmap.h" />
-    <ClInclude Include="BitmapImplementor.h" />
+    <ClInclude Include="Canvas.h" />
+    <ClInclude Include="CanvasImplementor.h" />
+    <ClInclude Include="CanvasImplementor_WinAPI.h" />
+    <ClInclude Include="Color.h" />
     <ClInclude Include="Factory.h" />
     <ClInclude Include="GraphicsLibrary.h" />
     <ClInclude Include="Line.h" />
-    <ClInclude Include="LineImplementor.h" />
     <ClInclude Include="Point.h" />
-    <ClInclude Include="PointImplementor.h" />
+    <ClInclude Include="Window.h" />
+    <ClInclude Include="WindowImplementor.h" />
+    <ClInclude Include="WindowImplementor_WinAPI.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Bitmap.cpp" />
-    <ClCompile Include="BitmapImplementor.cpp" />
+    <ClCompile Include="Canvas.cpp" />
+    <ClCompile Include="CanvasImplementor_WinAPI.cpp" />
+    <ClCompile Include="Color.cpp" />
     <ClCompile Include="Factory.cpp" />
     <ClCompile Include="Line.cpp" />
-    <ClCompile Include="LineImplementor.cpp" />
     <ClCompile Include="Point.cpp" />
-    <ClCompile Include="PointImplementor.cpp" />
+    <ClCompile Include="Window.cpp" />
+    <ClCompile Include="WindowImplementor_WinAPI.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -1,7 +1,7 @@
 #pragma once
 
 #include "GraphicsLibrary.h"
-#include "Bitmap.h"
+#include "Color.h"
 
 namespace Graphics
 {
@@ -9,7 +9,16 @@ namespace Graphics
 	{
 	public:
 		Point();
+		Point(int x, int y, Color& color);
 		~Point();
-		void Draw(Bitmap& bitmap);
+		int X() const;
+		int Y() const;
+		const Color& GetColor() const;
+		void SetPosition(int x, int y);
+
+	private:
+		int _X;
+		int _Y;
+		Color _Color;
 	};
 }

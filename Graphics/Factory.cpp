@@ -1,46 +1,29 @@
+#include "CanvasImplementor_WinAPI.h"
+#include "WindowImplementor_WinAPI.h"
 #include "Factory.h"
 
 using namespace Graphics;
 
 
-Factory::Factory()
+CanvasImplementor* Factory::CreateCanvas(int height, int width)
 {
+	return new CanvasImplementor_WinAPI(height, width);
 }
 
 
-Factory::~Factory()
+void Factory::DestroyCanvas(CanvasImplementor* canvas)
 {
+	delete reinterpret_cast<CanvasImplementor_WinAPI*>(canvas);
 }
 
 
-PointImplementor* Factory::CreatePoint()
+WindowImplementor* Factory::CreateWindow(int x, int y, int height, int width)
 {
-	return nullptr;
+	return new WindowImplementor_WinAPI(x, y, height, width);
 }
 
 
-LineImplementor* Factory::CreateLine()
+void Factory::DestroyWindow(WindowImplementor* window)
 {
-	return nullptr;
-}
-
-
-BitmapImplementor* Factory::CreateBitmap()
-{
-	return nullptr;
-}
-
-
-void Factory::DestroyPoint(PointImplementor* point)
-{
-}
-
-
-void Factory::DestroyLine(LineImplementor* line)
-{
-}
-
-
-void Factory::DestroyBitmap(BitmapImplementor* bitmap)
-{
+	delete reinterpret_cast<WindowImplementor_WinAPI*>(window);
 }

@@ -1,21 +1,21 @@
 #pragma once
 
-#include "PointImplementor.h"
-#include "LineImplementor.h"
-#include "BitmapImplementor.h"
+#include "CanvasImplementor.h"
+#include "WindowImplementor.h"
+
+#undef CreateWindow
 
 namespace Graphics
 {
 	class Factory
 	{
 	public:
-		Factory();
-		~Factory();
-		PointImplementor* CreatePoint();
-		LineImplementor* CreateLine();
-		BitmapImplementor* CreateBitmap();
-		void DestroyPoint(PointImplementor* point);
-		void DestroyLine(LineImplementor* line);
-		void DestroyBitmap(BitmapImplementor* bitmap);
+		static CanvasImplementor* CreateCanvas(int height, int width);
+		static WindowImplementor* CreateWindow(int x, int y, int height, int width);
+		static void DestroyCanvas(CanvasImplementor* canvas);
+		static void DestroyWindow(WindowImplementor* window);
+
+	private:
+		Factory() {}
 	};
 }
