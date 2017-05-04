@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Color.cpp" />
+    <ClCompile Include="Window.cpp" />
+    <ClCompile Include="WindowImplementor_WinAPI.cpp" />
+    <ClCompile Include="Factory.cpp" />
+    <ClCompile Include="Canvas.cpp" />
+    <ClCompile Include="CanvasImplementor_WinAPI.cpp" />
+    <ClCompile Include="Engine.cpp" />
+    <ClCompile Include="Point.cpp" />
+    <ClCompile Include="Object\Circle.cpp">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Rectangle.cpp">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Bitmap.cpp">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Line.cpp">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Color.h" />
+    <ClInclude Include="Window.h" />
+    <ClInclude Include="WindowImplementor.h" />
+    <ClInclude Include="WindowImplementor_WinAPI.h" />
+    <ClInclude Include="Factory.h" />
+    <ClInclude Include="Canvas.h" />
+    <ClInclude Include="CanvasImplementor.h" />
+    <ClInclude Include="CanvasImplementor_WinAPI.h" />
+    <ClInclude Include="Point.h" />
+    <ClInclude Include="Engine.h" />
+    <ClInclude Include="Object\Circle.h">
+      <Filter>Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Rectangle.h">
+      <Filter>Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Bitmap.h">
+      <Filter>Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Line.h">
+      <Filter>Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Object">
+      <UniqueIdentifier>{38a72c87-7f03-4439-88c6-c9b49a749a52}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

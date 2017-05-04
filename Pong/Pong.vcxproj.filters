@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Pong.cpp" />
+    <ClCompile Include="Paddle.cpp" />
+    <ClCompile Include="Goal.cpp" />
+    <ClCompile Include="Wall.cpp" />
+    <ClCompile Include="Ball.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Pong.h" />
+    <ClInclude Include="Paddle.h" />
+    <ClInclude Include="Goal.h" />
+    <ClInclude Include="Wall.h" />
+    <ClInclude Include="Ball.h" />
+  </ItemGroup>
+</Project>

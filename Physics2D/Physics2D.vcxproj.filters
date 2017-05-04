@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Engine.cpp" />
+    <ClCompile Include="Object.cpp" />
+    <ClCompile Include="Factory.cpp" />
+    <ClCompile Include="ObjectPair\AxisAlignedRectangle_AxisAlignedRectangle.cpp">
+      <Filter>ObjectPair</Filter>
+    </ClCompile>
+    <ClCompile Include="Vector.cpp" />
+    <ClCompile Include="CollisionTime.cpp" />
+    <ClCompile Include="Object\AxisAlignedRectangle.cpp">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Circle.cpp">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjectPair\Circle_Circle.cpp">
+      <Filter>ObjectPair</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\AxisAlignedLine.cpp">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjectPair\Circle_AxisAlignedLine.cpp">
+      <Filter>ObjectPair</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Engine.h" />
+    <ClInclude Include="Object.h" />
+    <ClInclude Include="ObjectPair.h" />
+    <ClInclude Include="Factory.h" />
+    <ClInclude Include="ObjectType.h" />
+    <ClInclude Include="Vector.h" />
+    <ClInclude Include="ObjectPair\AxisAlignedRectangle_AxisAlignedRectangle.h">
+      <Filter>ObjectPair</Filter>
+    </ClInclude>
+    <ClInclude Include="CollisionTime.h" />
+    <ClInclude Include="Object\AxisAlignedRectangle.h">
+      <Filter>Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Circle.h">
+      <Filter>Object</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjectPair\Circle_Circle.h">
+      <Filter>ObjectPair</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\AxisAlignedLine.h">
+      <Filter>Object</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjectPair\Circle_AxisAlignedLine.h">
+      <Filter>ObjectPair</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="ObjectPair">
+      <UniqueIdentifier>{48fb84fc-93b1-4f05-8952-18d1f26b2ba2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object">
+      <UniqueIdentifier>{7aa48e5f-c6f1-4bb4-b7f8-a73cd5e25f82}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
