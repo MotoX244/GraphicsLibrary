@@ -45,25 +45,43 @@ void Line_Circle::FindCollision(float seconds)
 	// Rotate both objects so the line is parallel with the X axis
 	line.RotateDegrees(-_Line.Rotation());
 	velocity.RotateDegrees(-_Line.Rotation());
+	char* c = "asdf";
 
 	// All we care about with the line is its distance from the X axis
 	float lineY = line.Y;
 
-	if ( (line.Y > 0 && velocity.Y < 0) || (line.Y < 0 && velocity.Y > 0) )
+	if ( _Circle.Radius() > abs(lineY) )
 	{
-		_TimeOfCollision = numeric_limits<float>::infinity();
+		_TimeOfCollision = 0;
+		_CollisionNormal = Vector(0, 1);
+		_CollisionNormal.RotateDegrees(_Line.Rotation());
 		return;
 	}
 
+	if ( lineY >= 0 )
+	{
+		if ( velocity.Y + _Circle.Radius() > lineY )
+		{
+			_TimeOfCollision = numeric_limits<float>::infinity();
+			return;
+		}
+	}
+	else
+	{
+		if ( velocity.Y - _Circle.Radius() > lineY )
+		{
+			_TimeOfCollision = numeric_limits<float>::infinity();
+			return;
+		}
+	}
+
 	float distance = abs(velocity.Y);
-	float distanceMax = abs(line.Y) - _Circle.Radius();
+	float distanceMax = abs(lineY) - _Circle.Radius();
 	if ( distance <= distanceMax )
 	{
 		_TimeOfCollision = numeric_limits<float>::infinity();
 		return;
 	}
-
-	cout << "Collision - Line ( " << _Line.X() << ", " << _Line.Y() << ") (" << _Line.VelocityX() << ", " << _Line.VelocityY() << ") - Circle (" << _Circle.X() << ", " << _Circle.Y() << ") (" << _Circle.VelocityX() << ", " << _Circle.VelocityY() << ")" << endl;
 
 	_CollisionNormal = Vector(0, 1);
 	_CollisionNormal.RotateDegrees(_Line.Rotation());
