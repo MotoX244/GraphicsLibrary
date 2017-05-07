@@ -6,21 +6,21 @@
 namespace Physics2D
 {
 	class Object;
+	class Line;
 	class Circle;
-	class AxisAlignedLine;
 
-	class Circle_AxisAlignedLine : public ObjectPair
+	class Line_Circle : public ObjectPair
 	{
 	public:
-		Circle_AxisAlignedLine(Circle& circle, AxisAlignedLine& line);
-		~Circle_AxisAlignedLine() override {}
+		Line_Circle(Line& line, Circle& circle);
+		~Line_Circle() override {}
 		Object& Object1() override;
 		Object& Object2() override;
 		bool Contains(const Object* object) const override;
-		void FindCollision() override;
+		void FindCollision(float seconds) override;
 
 	private:
+		Line& _Line;
 		Circle& _Circle;
-		AxisAlignedLine& _Line;
 	};
 }

@@ -13,10 +13,6 @@ Engine::Engine(float fps, const Vector& gravity)
 	, _Gravity(gravity)
 	, _PreviousTime(high_resolution_clock::now())
 {
-	Vector n(1, 1);
-	cout << " Raw = " << n.X << ", " << n.Y << endl;
-	n.Normalize();
-	cout << "Norm = " << n.X << ", " << n.Y << endl;
 }
 
 
@@ -131,7 +127,7 @@ ObjectPair* Engine::FindFirstCollision(float seconds)
 
 	for ( auto objectPair : _ObjectPairs )
 	{
-		objectPair->FindCollision();
+		objectPair->FindCollision(seconds);
 
 		if ( objectPair->TimeOfCollision() >= 0 && objectPair->TimeOfCollision() < seconds && (!firstCollision || objectPair->TimeOfCollision() < firstCollision->TimeOfCollision()) )
 		{

@@ -3,6 +3,6 @@
   <ItemGroup>
     <ClCompile Include="CollisionTimeTests.cpp" />
     <ClCompile Include="Circle_Circle_Test.cpp" />
-    <ClCompile Include="Circle_AxisAlignedLin_Test.cpp" />
+    <ClCompile Include="Line_Circle_Test.cpp" />
   </ItemGroup>
 </Project>

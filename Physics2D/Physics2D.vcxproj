@@ -24,9 +24,9 @@
     <ClCompile Include="Factory.cpp" />
     <ClCompile Include="Object.cpp" />
     <ClCompile Include="ObjectPair\AxisAlignedRectangle_AxisAlignedRectangle.cpp" />
-    <ClCompile Include="ObjectPair\Circle_AxisAlignedLine.cpp" />
+    <ClCompile Include="ObjectPair\Line_Circle.cpp" />
     <ClCompile Include="ObjectPair\Circle_Circle.cpp" />
-    <ClCompile Include="Object\AxisAlignedLine.cpp" />
+    <ClCompile Include="Object\Line.cpp" />
     <ClCompile Include="Object\AxisAlignedRectangle.cpp" />
     <ClCompile Include="Object\Circle.cpp" />
     <ClCompile Include="Vector.cpp" />
@@ -38,10 +38,10 @@
     <ClInclude Include="Object.h" />
     <ClInclude Include="ObjectPair.h" />
     <ClInclude Include="ObjectPair\AxisAlignedRectangle_AxisAlignedRectangle.h" />
-    <ClInclude Include="ObjectPair\Circle_AxisAlignedLine.h" />
+    <ClInclude Include="ObjectPair\Line_Circle.h" />
     <ClInclude Include="ObjectPair\Circle_Circle.h" />
     <ClInclude Include="ObjectType.h" />
-    <ClInclude Include="Object\AxisAlignedLine.h" />
+    <ClInclude Include="Object\Line.h" />
     <ClInclude Include="Object\AxisAlignedRectangle.h" />
     <ClInclude Include="Object\Circle.h" />
     <ClInclude Include="Vector.h" />

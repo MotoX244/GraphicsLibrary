@@ -203,6 +203,7 @@ float Vector::Length() const
 	return std::sqrt((X*X) + (Y*Y));
 }
 
+
 const Vector& Vector::Normalize()
 {
 	float length = Length();
@@ -215,16 +216,19 @@ const Vector& Vector::Normalize()
 	return *this;
 }
 
+
 float Vector::DotProduct(const Vector &vector) const
 {
 	return (X * vector.X) + (Y * vector.Y);
 }
+
 
 void Vector::Absolute()
 {
 	X = abs(X);
 	Y = abs(Y);
 }
+
 
 void Vector::RotateDegrees(float degrees)
 {
@@ -239,6 +243,7 @@ void Vector::RotateDegrees(float degrees)
 		X = x;
 	}
 }
+
 
 void Vector::RotateRadians(float radians)
 {

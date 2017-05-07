@@ -14,7 +14,7 @@ namespace Physics2D
 		virtual Object& Object1() = 0;
 		virtual Object& Object2() = 0;
 		virtual bool Contains(const Object* object) const = 0;
-		virtual void FindCollision() = 0;
+		virtual void FindCollision(float seconds) = 0;
 		float TimeOfCollision() { return _TimeOfCollision; }
 		const Vector& CollisionNormal() { return _CollisionNormal; }
 

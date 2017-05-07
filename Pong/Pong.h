@@ -19,7 +19,7 @@ public:
 
 private:
 	const float _WinningScore = 0.1f;
-	const float _BallSize = 0.04f;
+	const float _BallSize = 0.2f;
 	const float _PaddleWidth = 0.02f;
 	const float _PaddleHeight = 0.2f;
 	const float _PaddlePosition = 0.04f;

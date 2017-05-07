@@ -79,9 +79,30 @@ void Pong::Run()
 void Pong::Reset()
 {
 	_Ball.SetPosition(_Width / 2.0f, _Height / 2.0f);
-	_Ball.SetVelocity(100, 0);
-	_Ball2.SetPosition((_Width / 2.0f) + 100, (_Height / 2.0f) - 100);
-	_Ball2.SetVelocity(100, 90);
+	_Ball.SetVelocity(500, 30);
+	_Ball2.SetPosition((_Width / 2.0f) + 150, _Height / 2.0f);
+	_Ball2.SetVelocity(500, 70);
+
+	//_Ball.SetPosition(200, 359);
+	//_Ball.SetVelocity(100, 0);
+	//_Ball2.SetPosition(600, 241);
+	//_Ball2.SetVelocity(100, 180);
+
+	//_Ball.SetPosition(200, 241);
+	//_Ball.SetVelocity(100, 0);
+	//_Ball2.SetPosition(600, 359);
+	//_Ball2.SetVelocity(100, 180);
+
+	//_Ball.SetPosition(241, 150);
+	//_Ball.SetVelocity(100, 90);
+	//_Ball2.SetPosition(359, 450);
+	//_Ball2.SetVelocity(100, 270);
+
+	//_Ball.SetPosition(241, 450);
+	//_Ball.SetVelocity(100, 270);
+	//_Ball2.SetPosition(359, 150);
+	//_Ball2.SetVelocity(100, 90);
+
 	_PaddleLeft.SetPosition(_Height * 0.4f);
 	_PaddleRight.SetPosition(_Height * 0.8f);
 }

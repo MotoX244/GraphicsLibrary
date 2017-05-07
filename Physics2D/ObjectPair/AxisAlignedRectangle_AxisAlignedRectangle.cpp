@@ -33,7 +33,7 @@ bool AxisAlignedRectangle_AxisAlignedRectangle::Contains(const Object* object) c
 }
 
 
-void AxisAlignedRectangle_AxisAlignedRectangle::FindCollision()
+void AxisAlignedRectangle_AxisAlignedRectangle::FindCollision(float /*seconds*/)
 {
 	CollisionTime collisionX(_Rectangle1.MinX(), _Rectangle1.X(), _Rectangle1.MaxX(), _Rectangle1.VelocityX(), _Rectangle2.MinX(), _Rectangle2.X(), _Rectangle2.MaxX(), _Rectangle2.VelocityX());
 	CollisionTime collisionY(_Rectangle1.MinY(), _Rectangle1.Y(), _Rectangle1.MaxY(), _Rectangle1.VelocityY(), _Rectangle2.MinY(), _Rectangle2.Y(), _Rectangle2.MaxY(), _Rectangle2.VelocityY());

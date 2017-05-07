@@ -18,10 +18,10 @@
     <ClCompile Include="ObjectPair\Circle_Circle.cpp">
       <Filter>ObjectPair</Filter>
     </ClCompile>
-    <ClCompile Include="Object\AxisAlignedLine.cpp">
+    <ClCompile Include="Object\Line.cpp">
       <Filter>Object</Filter>
     </ClCompile>
-    <ClCompile Include="ObjectPair\Circle_AxisAlignedLine.cpp">
+    <ClCompile Include="ObjectPair\Line_Circle.cpp">
       <Filter>ObjectPair</Filter>
     </ClCompile>
   </ItemGroup>
@@ -45,10 +45,10 @@
     <ClInclude Include="ObjectPair\Circle_Circle.h">
       <Filter>ObjectPair</Filter>
     </ClInclude>
-    <ClInclude Include="Object\AxisAlignedLine.h">
+    <ClInclude Include="Object\Line.h">
       <Filter>Object</Filter>
     </ClInclude>
-    <ClInclude Include="ObjectPair\Circle_AxisAlignedLine.h">
+    <ClInclude Include="ObjectPair\Line_Circle.h">
       <Filter>ObjectPair</Filter>
     </ClInclude>
   </ItemGroup>

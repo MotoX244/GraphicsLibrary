@@ -16,7 +16,7 @@ namespace Physics2D
 		Object& Object1() override;
 		Object& Object2() override;
 		bool Contains(const Object* object) const override;
-		void FindCollision() override;
+		void FindCollision(float seconds) override;
 
 	private:
 		Circle& _Circle1;

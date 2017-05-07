@@ -9,7 +9,6 @@ namespace Physics2D
 		Line,
 		Circle,
 		Rectangle,
-		AxisAlignedLine,
 		AxisAlignedRectangle
 	};
 }
